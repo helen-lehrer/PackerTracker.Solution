@@ -30,10 +30,10 @@ namespace PackerTracker.Models
       _instances.Clear();
     }
 
-    // public static Item Find(int searchId)
-    // {
-    //   return _instances[searchId-1];
-    // }
+    public static Item Find(int searchId)
+    {
+      return _instances[searchId-1];
+    }
 
   }
 }

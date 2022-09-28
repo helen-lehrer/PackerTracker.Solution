@@ -70,5 +70,11 @@ namespace PackerTracker.Tests
 
       CollectionAssert.AreEqual(Item.GetAll(), newList);
     }
+
+    [TestMethod]
+    public void Find_ReturnItemById_Id()
+    {
+      Assert.AreEqual(Item.Find(1), itemOne);
+    }
   }
 }
