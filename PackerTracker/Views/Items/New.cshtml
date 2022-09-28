@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Packing List!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+    <form action="/items" method="post">
+      <label for="name">Enter the name of your item:</label>
+      <input id="name" name="name" type="text" required>
+      <label for="weight">How heavy is that? Enter number:</label>
+      <input id="weight" name="weight" type="number" required>
+      <label for="price">How much does it cost? Enter number:</label>
+      <input id="price" name="price" type="number" required>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

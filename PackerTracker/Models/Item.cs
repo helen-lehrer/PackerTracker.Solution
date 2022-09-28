@@ -20,6 +20,12 @@ namespace PackerTracker.Models
       Id = _instances.Count;
     }
 
+   public static void Delete(int searchId)
+    {
+      Item deleteItem = Item.Find(searchId);
+      _instances.Remove(deleteItem);
+    }
+
     public static List<Item> GetAll()
     {
       return _instances;
